@@ -1,0 +1,26 @@
+{
+  "name": "ASE-service-template-c-sharp",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "args": {
+      "HOST_UID": "1000"
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace/service-template-c-sharp,type=bind"
+  ],
+  "workspaceFolder": "/workspace/service-template-c-sharp",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.dotnet-format",
+        "editorconfig.editorconfig",
+        "dbankier.vscode-quick-select"
+      ]
+    }
+  },
+  "remoteUser": "dev"
+}
