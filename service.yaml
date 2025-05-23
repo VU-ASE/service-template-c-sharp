@@ -1,8 +1,8 @@
-name: c-sharp-test
-author: max
-source: example.com
-version: 0.0.1
-description: A template service in C#
+name: SERVICE_NAME
+author: SERVICE_AUTHOR
+source: SERVICE_SOURCE
+version: SERVICE_VERSION
+description: An example service pretending to be a controller in C#
 
 # The alias "as: controller" allows this service to be recognized as "controller"
 # by other components (like the actuator), even if its actual name is different.
@@ -10,8 +10,8 @@ description: A template service in C#
 as: controller
 
 commands:
-  build: make build
-  run: make run
+  build: echo "no build step"
+  run: dotnet run --project src
 
 inputs:
   - service: imaging

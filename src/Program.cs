@@ -19,7 +19,7 @@ public static class RoverService
         //
         // Access the service identity, who am I?
         //
-        Roverlog.Info($"Hello world, a new Go service '{service.Name}' was born at version {service.Version}");
+        Roverlog.Info($"Hello world, a new C# service '{service.Name}' was born at version {service.Version}");
 
         //
         // Access the service configuration, to use runtime parameters
@@ -163,6 +163,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Starting run function");
         Rover.Run(RoverService.run, RoverService.onTerminate);
     }
 }
